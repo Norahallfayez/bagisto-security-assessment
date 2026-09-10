@@ -1,6 +1,6 @@
 # Bagisto Security Assessment
 
-A secure software development assessment of **Bagisto**, an open-source e-commerce platform built with Laravel and Vue.js.
+A secure software development assessment of **Bagisto**, an open-source e-commerce platform.
 
 This university project was completed as part of the **Secure Software Development (CYS402)** course. The project evaluates Bagisto from a cybersecurity perspective through security risk analysis, threat modeling, security requirements, architecture analysis, manual code review, and automated static analysis.
 
@@ -8,7 +8,7 @@ This university project was completed as part of the **Secure Software Developme
 
 E-commerce platforms process sensitive information such as customer data, authentication credentials, order records, payment information, and business data. Because of this, security weaknesses can result in data breaches, financial loss, unauthorized access, and service disruption.
 
-This project analyzes the security of the Bagisto e-commerce platform throughout multiple phases of the secure software development lifecycle.
+This project analyzes the security of the Bagisto e-commerce platform through multiple phases of the secure software development lifecycle.
 
 ## Security Assessment Methodology
 
@@ -20,7 +20,7 @@ The assessment was completed in four main phases.
 - Identified significant security risks
 - Examined sensitive data handled by the platform
 - Evaluated existing protection measures
-- Identified security weaknesses
+- Identified potential security weaknesses
 - Analyzed the potential consequences of security failures
 
 ### Phase 2 – Assets, Threats & Security Requirements
@@ -84,14 +84,14 @@ Critical functions related to the following areas were manually reviewed:
 - Admin authentication
 - Customer authentication
 - Cart and session management
-- PayPal payment processing
+- Payment processing
 
-Automated analysis using **SonarCloud** was also performed to identify security issues and hotspots.
+Automated analysis using **SonarCloud** was also performed to identify and evaluate security issues and hotspots.
 
 Security findings investigated by the team included:
 
 - Authentication security issue
-- Regular Expression Denial of Service (ReDoS) hotspot
+- Regular Expression Denial of Service (ReDoS)
 - Open Redirect
 - Permissive CORS policy
 
@@ -119,12 +119,11 @@ As part of the project team, my contributions included work across multiple phas
 
 My work included:
 
-- Identification and analysis of significant security risks
-- Development of security requirements
 - Asset mapping and security analysis
+- Development of security requirements
 - Analysis of security controls and mitigation strategies
-- Manual review of the Cart Merge function
-- Investigation of an **Open Redirect** issue identified through SonarCloud
+- Manual review of the **Cart Merge** function
+- Investigation of an **Open Redirect** finding identified through SonarCloud
 
 Security requirements I worked on included:
 
@@ -136,33 +135,37 @@ Security requirements I worked on included:
 
 ## Key Security Areas
 
-The assessment focused on several important cybersecurity areas:
+### Authentication Security
 
-**Authentication Security**  
 Protection of customer and administrator accounts against unauthorized access, brute-force attacks, and authentication weaknesses.
 
-**Access Control**  
-Evaluation of administrative permissions, RBAC, and the principle of least privilege.
+### Access Control
 
-**Payment Security**  
-Analysis of payment processing, callbacks, transaction integrity, and risks associated with external payment gateways.
+Evaluation of administrative permissions, role-based access control, and the principle of least privilege.
 
-**Input Security**  
-Consideration of vulnerabilities such as SQL injection and cross-site scripting (XSS).
+### Payment Security
 
-**Availability**  
+Analysis of payment processing, callbacks, transaction integrity, and risks associated with external payment services.
+
+### Input Security
+
+Analysis of risks associated with improper input handling and common web application vulnerabilities.
+
+### Availability
+
 Analysis of denial-of-service risks, rate limiting, and resource-intensive operations.
 
-**Logging & Monitoring**  
+### Logging & Monitoring
+
 Evaluation of security logging for authentication events, privileged actions, payments, and incident investigation.
 
 ## Full Project Report
 
-The complete CYS402 security assessment, including diagrams, threat models, security requirements, code reviews, and SonarCloud findings, is available here:
+The complete CYS402 security assessment, including threat models, security requirements, architecture analysis, code reviews, and SonarCloud findings, is available here:
 
-[View the Full Security Assessment Report](CYS402-Project-Final-Report.pdf)
+[View the Full Security Assessment Report](report/CYS402-Project-Final-Report.pdf)
 
-## Team
+## Academic Project
 
 This project was completed by a team of four Computer Science students as part of the **Secure Software Development (CYS402)** course at Prince Sultan University.
 
