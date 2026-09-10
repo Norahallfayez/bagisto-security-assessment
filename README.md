@@ -81,19 +81,19 @@ The project also evaluated security principles and design patterns including:
 
 The high-level architecture illustrates the main Bagisto components, users, core modules, database, payment gateway, and external APIs.
 
-![Bagisto System Architecture](screenshots/architecture.jpg)
+![Bagisto System Architecture](architecture.jpg)
 
 ### Threat Model
 
 The threat model was developed using **OWASP Threat Dragon** to visualize system components, data flows, trust boundaries, and potential security threats.
 
-![Bagisto Threat Model](screenshots/threat-model.jpg)
+![Bagisto Threat Model](threat-model.jpg)
 
 ### SonarCloud Security Analysis
 
 **SonarCloud** was used to perform automated static analysis and identify security issues and hotspots for further investigation.
 
-![SonarCloud Security Analysis](screenshots/sonarcloud-overview.jpg)
+![SonarCloud Security Analysis](sonalcloud-overview.jpg)
 
 ### Phase 4 – Secure Code Review & Static Analysis
 
